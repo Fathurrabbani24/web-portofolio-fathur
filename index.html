@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <link rel="stylesheet" href="paralax.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<style>
+    /* clearing css */
+    *, html, body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parralax{
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+    .intro{
+        background-image: url('img/58.jpg');
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .title{ 
+        font-size: 4em;
+        letter-spacing: 20px;
+        font-family: fantasy;
+        color: white;
+    }
+</style>
+<body>
+    <!-- header -->
+    <header>
+        <h3 class="logo">MyPortofolio<strong>.</strong></h3>
+        <nav>
+          <ul class="nav-link">
+            <li><a href="#Home" class=""><button>Home</button>
+            <li><a href="#about" class=""><button>About</button>
+            <li><a href="#Portofolio" class=""><button>Portofolio</button>
+          </ul>
+        </nav>
+        <ul>
+          <li><a href="#Contact" class=""><button>Contact</button>
+        </ul>
+        
+      </header>
+      <!-- end header -->
+    <div class="parralax intro">
+        <div class="cta">
+            <div class="title">MY Portofolio</div>
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" id="about">
+        <div class="row">
+          <h1>About &nbsp;<strong>Me</strong></h1>
+        </div>
+        <div class="row-main">
+          <div class="col">
+            <p>
+              My name is Muhammad Al Fathur Rabbani, I live in Jakarta, Indonesia. I attend Quadrant Boarding School and my hobby is playing football <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum ipsa enim quasi error reiciendis atque, nulla labore consectetur vel expedita quo perspiciatis ea adipisci optio, explicabo tenetur iusto nam!
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- end about -->
+      <!-- about -->
+    <div class="portofolio" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" id="Portofolio">
+        <div class="row">
+          <h1>Portofolio &nbsp;<strong></strong></h1>
+          <p>
+            As a student, I also have the determination to become a reliable developer I've been interested in coding languages ​​since I was in 8th grade, and I tried to force myself to learn about Accel programming.
+          </p>
+        </div>
+
+        <div class="row-main">
+          <div class="col">
+            <img src="img/89.jpg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" alt="" />
+          </div>
+          <div class="col">
+            <img src="img/90.jpg" data-aos="fade-up"
+            data-aos-duration="3000" alt="" />
+          </div>
+          <div class="col">
+            <img src="img/91.jpg" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" alt="" />
+          </div>
+        </div>
+      </div>
+      
+      <!-- end about -->
+
+      <!-- contact -->
+      <div class="center" data-aos="fade-up"
+      data-aos-anchor-placement="top-center">
+        <div class="row">
+          <h1>Contact &nbsp;<strong></strong></h1></div> 
+        </div>
+<div class="form-container" id="Contact">
+    <div class="form">
+        <span class="heading">Get in touch</span>
+        <input placeholder="Name" type="text" class="input">
+        <input placeholder="Email" id="mail" type="email" class="input">
+        <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+        <div class="button-container">
+        <div class="send-button">Send</div>
+        <div class="reset-button-container">
+            <div id="reset-btn" class="reset-button">Reset</div>
+        </div>
+    </div>
+  </div>
+  </div>
+      <!-- end contact -->
+  
+  
+      <!-- footer -->
+    <footer>
+      <p>&copy; Fathur<strong>.</strong> Developer</p>
+  </footer>
+  <!-- end footer --> 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
